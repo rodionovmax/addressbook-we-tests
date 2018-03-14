@@ -21,7 +21,7 @@ public class GroupCreationTests {
         login("user", "pass", "secret", By.xpath("//form[@id='LoginForm']/input[3]"), "admin");
     }
 
-    private void login(String user, String pass, String secret, By xpath, String username, String password) {
+    private void login(String user, String pass, String password, By xpath, String username) {
         wd.findElement(By.name(user)).click();
         wd.findElement(By.name(user)).clear();
         wd.findElement(By.name(user)).sendKeys(username);
